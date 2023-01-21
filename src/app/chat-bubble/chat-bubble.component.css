@@ -1,0 +1,34 @@
+.chat-bubble {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  bottom:  140px;
+  border-color: rgba(5, 5, 5, 0);
+  background-color: #ed050500;
+  border-radius: 100px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  background: hsla(0, 0%, 100%, 0);
+}
+
+
+
+.chat-bot-btn {
+
+  width: 60px;
+  height: 60px;
+  right: 30px;
+  bottom: 140px;
+  border-radius: 100px;
+  border-color: rgba(255, 255, 255, 0);
+  padding: 0px;
+  background-color: #ffffff00;
+
+}
+
+
+.show-scrollTop {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
