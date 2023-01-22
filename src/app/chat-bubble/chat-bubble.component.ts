@@ -1,6 +1,7 @@
 import { Component, OnInit , Inject, HostListener} from '@angular/core';
 import { DOCUMENT } from '@angular/common'
-
+import {MatDialog} from '@angular/material/dialog';
+import { ChatWindowComponent } from '../chat-window/chat-window.component';
 
 @Component({
   selector: 'app-chat-bubble',
@@ -11,7 +12,8 @@ export class ChatBubbleComponent implements OnInit {
 
   windowScrolled: boolean | undefined;
 
-  constructor(@Inject(DOCUMENT) private document: Document) { }
+
+  constructor(@Inject(DOCUMENT) private document: Document,private dialog: MatDialog) { }
 
   @HostListener("window:scroll", [])
 
@@ -28,7 +30,18 @@ export class ChatBubbleComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  hello() {
+  OpenChatwindow() {
+    const dialogRef = this.dialog.open(ChatWindowComponent,
+      {
+        panelClass : 'chat-window-dialog',
+        position : {right : '20px',bottom : '60px'},
+        disableClose : true
+      },
+      );
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
 
   }
 

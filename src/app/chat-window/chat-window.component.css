@@ -1,0 +1,21 @@
+.chat-close-btn {
+  position: absolute;
+    right: 15px;
+    top: 20px;
+    width : 30px;
+    height : 30px;
+    display : inline-block;
+    background-image: url("src/assets/images/chat-close-btn.png");
+    text-align: center;
+    align-content: center;
+    padding-left: 0px;
+    border-width: 0px;
+    background-color: transparent;
+}
+
+
+.chat-title {
+  display: flex;
+  position: relative;
+  padding-right: 20px;
+}
