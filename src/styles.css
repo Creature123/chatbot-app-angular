@@ -15,7 +15,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   align-items: right;
   text-align: left;
   height: 500px;
-  width : 300px;
+  width : 400px;
   border-radius: 15px;
   font-family: radley;
   padding: 0px;
@@ -23,7 +23,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .chat-window-dialog .mat-dialog-title {
 
-  background-color: #3734C1;
+  background-color: #B93160;
   padding-left: 20px;
   padding-bottom: 10px;
   padding-top: 20px;
